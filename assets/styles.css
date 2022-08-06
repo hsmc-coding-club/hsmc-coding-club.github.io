@@ -11,6 +11,7 @@
     --opaque-black: rgba(0, 0, 0, 0.25);
     --light-magenta: rgb(199,146,234);
     --bluish: rgb(0, 85, 255);
+    --panel-hover: rgba(0, 0, 0, 0.30);
 }
 
 * {
@@ -221,6 +222,14 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.large-panel:hover {
+    background-color: var(--panel-hover);
+}
+
+.panel:hover {
+    background-color: var(--panel-hover);
 }
 
 .panel-row {
