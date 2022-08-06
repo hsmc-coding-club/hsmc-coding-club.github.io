@@ -174,8 +174,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .social-item {
+    font-family: "Open Sans", sans-serif;
     text-decoration: none;
-    font-style: italic;
 }
 
 .social-item:hover {
@@ -259,6 +259,13 @@ a.post-link:hover {
     font-family: "Open Sans", sans-serif;
     margin-top: 10px;
     font-size: 21px;
+}
+
+.icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
 }
 
 .panel-header {
