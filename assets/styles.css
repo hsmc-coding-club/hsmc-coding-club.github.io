@@ -1,0 +1,268 @@
+:root {
+    --paler-blue: rgb(54, 52, 71);
+    --light-orange: rgb(232, 181, 87);
+    --navbar-blue: rgb(40,44,53);
+    --light-white: rgb(211, 211, 211);
+    --light-gray: rgb(136, 142, 152);
+    --light-blue: rgb(100, 126, 174);
+    --opaque-black: rgba(0, 0, 0, 0.25);
+    --light-magenta: rgb(199,146,234);
+}
+
+* {
+    font-family: sans-serif;
+    color: rgb(189,197,211);
+}
+
+.stop-scrolling {
+    overflow: hidden;
+}
+
+body {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    row-gap: 5px;
+    background-color: var(--paler-blue);
+    margin-bottom: 80px;
+}
+
+.content {
+    grid-row-start: 2;
+    grid-column: 2/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.panel {
+    background-color: var(--opaque-black);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0px;
+    display: flex;
+    grid-row: 1/1;
+    grid-column: 1/5;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--navbar-blue);
+    border-bottom: 1px solid rgb(62, 68, 82);
+}
+
+.coding-club-logo {
+    order: 0;
+    padding-left: 0px;
+    padding-right: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: auto;
+
+    height: 60px;
+}
+
+.hsmc-logo {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    order: 5;
+    margin-left: auto;
+    margin-right: 30px;
+    height: 60px;
+}
+
+.navbar-link {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15pt;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar-link:hover {
+    color: rgb(189,197,211);
+}
+
+.divider {
+    font-size: 18pt;
+    color: rgb(189,197,211);
+    padding: 5px;
+}
+
+.split {
+    display: flex;
+    flex-direction: row;
+}
+
+.split>.left {
+    order: 0;
+    padding: 2px;
+    margin-right: 30px;
+}
+
+.split>.right {
+    order: 1;
+    padding: 2px;
+    margin-left: 30px;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+   
+body::-webkit-scrollbar-track {
+    background-color: rgb(51, 55, 66);
+}
+   
+body::-webkit-scrollbar-thumb {
+ background-color: rgba(169, 169, 169, 0.719);
+ border-radius: 30px;
+}
+
+.person-img {
+    border-radius: 50%;
+    width: 200px;
+}
+
+.name {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 2px;
+}
+
+.years {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-align: center;
+    color:var(--light-orange);
+}
+
+.extra-pad-sides {
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.username {
+    margin-top: 3px;
+    text-align: center;
+    color: var(--light-blue);
+}
+
+.horizontal {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.socials {
+    margin-top: 20px;
+}
+
+.social-item {
+    text-decoration: none;
+    font-style: italic;
+}
+
+.social-item:hover {
+    color: var(--light-gray);
+}
+
+#footer {
+    background-color: var(--navbar-blue);
+    font-weight: bold;
+    position: fixed;
+    bottom: 0px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100%; /* Need a specific value to work */
+}
+
+.footer-text {
+    color: var(--light-white);
+    text-align: center;
+    font-size: 12pt;
+}
+
+.page-heading {
+    color: white;
+    font-size: 40px;
+}
+
+
+.large-panel {
+    background-color: var(--opaque-black);
+    margin: 10px;
+    padding: 20px;
+    padding-top: 5px;
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.panel-row {
+    display: flex;
+    flex-direction: row;
+}
+
+a.post-link {
+    color:rgb(212, 207, 207);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.post-link:hover {
+    color: var(--light-magenta);
+}
+
+.large-panel-img {
+    align-self: flex-start;
+    margin-top: 20px;
+    width: 140px;
+    margin-right: 30px;
+    border-radius: 40px;
+}
+
+.panel-bonus-img {
+    margin: 20px;
+    height: 250px;
+    border-radius: 5%;
+    border: 3px solid white;
+}
+
+.panel-description {
+    margin-top: 10px;
+    font-size: 21px;
+}
+
+.panel-header {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.date {
+    color:rgb(165, 164, 164);
+}
