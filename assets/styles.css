@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-:root {
+:root {    
+    --light-green: rgb(121, 218, 134);
     --paler-blue: rgb(54, 52, 71);
     --light-orange: rgb(232, 181, 87);
     --navbar-blue: rgb(40,44,53);
@@ -10,7 +11,6 @@
     --opaque-black: rgba(0, 0, 0, 0.25);
     --light-magenta: rgb(199,146,234);
     --bluish: rgb(0, 85, 255);
-    --light-green: rgb(121, 218, 134);
 }
 
 * {
@@ -267,9 +267,11 @@ a.post-link:hover {
     font-size: 30px;
 }
 
+/* Turns out, this looks better as grey
 .date {
     color: var(--light-green);
 }
+*/
 
 .author {
     color: var(--light-magenta);
