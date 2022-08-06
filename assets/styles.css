@@ -99,7 +99,7 @@ body {
 
 .divider {
     font-size: 18pt;
-    color: var(--divider-gray)
+    color: var(--divider-gray);
     padding: 5px;
 }
 
