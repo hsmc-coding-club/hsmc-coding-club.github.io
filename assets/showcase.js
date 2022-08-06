@@ -6,6 +6,6 @@ setInterval(() => {
     $(`#cac-carousel`).fadeToggle(1000, () => {
         $(`#cac-carousel`).attr(`src`, `assets/img/gallery/cac/${cacImgs[cacIndex % cacImgs.length]}`);
         cacIndex = cacIndex % cacImgs.length; // Save Memory Just in Case 
+        $(`#cac-carousel`).fadeToggle(1000);
     });
-    $(`#cac-carousel`).fadeToggle(1000);
 }, 5000);

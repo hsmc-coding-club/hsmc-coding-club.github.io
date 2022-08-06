@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 :root {
     --paler-blue: rgb(54, 52, 71);
     --light-orange: rgb(232, 181, 87);
@@ -7,6 +9,8 @@
     --light-blue: rgb(100, 126, 174);
     --opaque-black: rgba(0, 0, 0, 0.25);
     --light-magenta: rgb(199,146,234);
+    --blue: rgb(0, 85, 255);
+    --light-green: rgb(121, 218, 134);
 }
 
 * {
@@ -191,10 +195,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer-text {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
     color: var(--light-white);
     text-align: center;
     font-size: 12pt;
+    padding: 2px;
 }
 
 .page-heading {
@@ -222,12 +229,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 a.post-link {
+    font-family: "Open Sans", sans-serif;
     color:rgb(212, 207, 207);
     font-weight: bold;
     text-decoration: none;
 }
 
 a.post-link:hover {
+    font-family: "Open Sans", sans-serif;
     color: var(--light-magenta);
 }
 
@@ -247,6 +256,7 @@ a.post-link:hover {
 }
 
 .panel-description {
+    font-family: "Open Sans", sans-serif;
     margin-top: 10px;
     font-size: 21px;
 }
@@ -258,5 +268,9 @@ a.post-link:hover {
 }
 
 .date {
-    color:rgb(165, 164, 164);
+    color: var(--light-green);
+}
+
+.author {
+    color: var(--light-magenta);
 }

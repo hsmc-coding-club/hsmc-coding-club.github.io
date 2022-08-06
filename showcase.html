@@ -4,6 +4,8 @@
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="assets/styles.css">
         <title>HSMC Coding Club</title>
+
+        <!-- Favicons -->
         <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
@@ -13,6 +15,7 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
+
         <!-- Import jQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <!-- Import ScrollReveal -->
@@ -38,30 +41,35 @@
         </div>
         <br><br><br><br><br><br>
         <div class="content" style="grid-column: 2/4">
-            <div class="large-panel">
-                <div class="panel-row">
-                    <img class="large-panel-img" src="assets/img/hackathon-by-the-sea.png">
-                    <p class="panel-description"><span class="panel-header">Hackathon by The Sea 2022</span> <br><span class="date">3/19/2022</span><br><br>
-                    Alex Sherbrooke & Hershraj Niranjani of the HS@MC Coding Club won the Hackathon by The Sea 2022 along with the "Best Concept" award. The winning app is called "PostIt", and you can take a look <a href="https://knohow.github.io/postit" class="post-link" target="_blank">here</a>.<br>
-                    <br><a target="_blank" class="post-link" href="https://www.vcoe.org/hackathon">Official Announcement</a>
-                </p>
-                </div>
-
-                <img class="panel-bonus-img" style="height: 400px;" src="assets/img/hbts-win.jfif">
+            <div class="panel">
+                <h2 class="page-heading">💎 Showcase</h2>
             </div>
-            <div class="large-panel">
-                <div class="panel-row">
-                    <img class="large-panel-img" src="assets/img/cac.jpg">
-                    <p class="panel-description"><span class="panel-header">Congressional App Challenge 2021</span> <br><span class="date">2/9/2022</span><br><br>
-                    Alex Sherbrooke, Hershraj Niranjani, and Ryan McCombs of the HS@MC Coding Club won the Congressional App Challenge 2021 for the district CA-26. The winning app is called "Quiznot", and you can take a look <a href="https://cabalex.github.io/quitznot" class="post-link" target="_blank">here</a>.<br>
-                    <br><a target="_blank" class="post-link" href="https://juliabrownley.house.gov/brownley-announces-winners-of-the-2021-congressional-app-challenge/">Julia Brownley Post</a>
-                    <br><a target="_blank" class="post-link" href="https://www.mpacorn.com/articles/local-students-win-coding-contest/">The Acorn Article</a>
-                </p>
+                <div class="large-panel">
+                    <div class="panel-row">
+                        <img class="large-panel-img" src="assets/img/hackathon-by-the-sea.png">
+                        <p class="panel-description"><span class="panel-header">Hackathon by The Sea 2022</span> <br><span class="date">🕑 3/19/2022</span><br><br>
+                        Alex Sherbrooke & Hershraj Niranjani of the HS@MC Coding Club won the Hackathon by The Sea 2022 along with the "Best Concept" award. The winning app is called "PostIt", and you can take a look <a href="https://knohow.github.io/postit" class="post-link" target="_blank">here</a>.<br>
+                        <br><a target="_blank" class="post-link" href="https://www.vcoe.org/hackathon">Official Announcement</a>
+                    </p>
+                    </div>
+    
+                    <img class="panel-bonus-img" style="height: 400px;" src="assets/img/hbts-win.jfif">
                 </div>
-
-                <img class="panel-bonus-img" id="cac-carousel" src="assets/img/gallery/cac/gallery-1.jpg">
+                <div class="large-panel">
+                    <div class="panel-row">
+                        <img class="large-panel-img" src="assets/img/cac.jpg">
+                        <p class="panel-description"><span class="panel-header">Congressional App Challenge 2021</span> <br><span class="date">🕑 2/9/2022</span><br><br>
+                        Alex Sherbrooke, Hershraj Niranjani, and Ryan McCombs of the HS@MC Coding Club won the Congressional App Challenge 2021 for the district CA-26. The winning app is called "Quiznot", and you can take a look <a href="https://cabalex.github.io/quitznot" class="post-link" target="_blank">here</a>.<br>
+                        <br><a target="_blank" class="post-link" href="https://juliabrownley.house.gov/brownley-announces-winners-of-the-2021-congressional-app-challenge/">Julia Brownley Post</a>
+                        <br><a target="_blank" class="post-link" href="https://www.mpacorn.com/articles/local-students-win-coding-contest/">The Acorn Article</a>
+                    </p>
+                    </div>
+    
+                    <img class="panel-bonus-img" id="cac-carousel" src="assets/img/gallery/cac/gallery-1.jpg">
+                </div>
             </div>
             <script>
+                ScrollReveal().reveal('.panel', {delay: 150});
                 ScrollReveal().reveal('.large-panel', {delay: 150});
             </script>
         </div>
