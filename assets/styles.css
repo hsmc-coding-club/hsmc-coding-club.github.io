@@ -50,8 +50,8 @@ body {
 .navbar {
     position: fixed;
     width: 100%;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
     margin: 0px;
     display: flex;
     grid-row: 1/1;
@@ -65,25 +65,17 @@ body {
 .coding-club-logo {
     order: 0;
     padding-left: 0px;
-    padding-right: 40px;
+    padding-right: 10px;
     padding-top: 0px;
     padding-bottom: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-right: auto;
-
     height: 60px;
 }
 
 .hsmc-logo {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    order: 5;
-    margin-left: auto;
-    margin-right: 30px;
     height: 60px;
+    padding-right: 20px;
 }
 
 .navbar-link {
@@ -188,7 +180,6 @@ body::-webkit-scrollbar-thumb {
 
 #footer {
     background-color: var(--navbar-blue);
-    font-weight: bold;
     position: fixed;
     bottom: 0px;
     left: 0; 
@@ -200,6 +191,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer-text {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: var(--light-white);
     text-align: center;
     font-size: 12pt;
