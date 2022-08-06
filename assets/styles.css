@@ -12,11 +12,12 @@
     --light-magenta: rgb(199,146,234);
     --bluish: rgb(0, 85, 255);
     --panel-hover: rgba(0, 0, 0, 0.30);
+    --divider-gray: rgb(189,197,211);
 }
 
 * {
     font-family: sans-serif;
-    color: rgb(189,197,211);
+    color: var(--divider-gray)
 }
 
 .stop-scrolling {
@@ -93,12 +94,12 @@ body {
 }
 
 .navbar-link:hover {
-    color: rgb(189,197,211);
+    color: var(--divider-gray)
 }
 
 .divider {
     font-size: 18pt;
-    color: rgb(189,197,211);
+    color: var(--divider-gray)
     padding: 5px;
 }
 
@@ -180,7 +181,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .social-item:hover {
-    color: var(--light-gray);
+    color: var(--light-white);
 }
 
 #footer {
