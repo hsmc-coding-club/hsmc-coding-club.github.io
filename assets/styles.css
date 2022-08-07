@@ -267,6 +267,14 @@ a.post-link {
     text-decoration: none;
 }
 
+span.code-block {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 5px;
+    font-size: 16px;
+}
+
 a.post-link:hover {
     font-family: "Open Sans", sans-serif;
     color: var(--light-magenta);
@@ -314,4 +322,38 @@ a.post-link:hover {
 
 .author {
     color: var(--light-magenta);
+}
+
+#mobile-dropdown {
+    visibility: collapse;
+}
+
+
+
+@media screen and (max-width: 872px) {
+
+    .navbar {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-link {
+        font-size: 20px;
+    }
+
+    .coding-club-logo {
+        display: none;
+    }
+    
+    .hsmc-logo {
+        display: none;
+    }
+
+    .large-panel {
+        width: 500px;
+        padding-top: 30px;
+        padding-right: 70px;
+        padding-left: 70px;
+    }
 }

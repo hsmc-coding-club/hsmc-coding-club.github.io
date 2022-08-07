@@ -1,3 +1,9 @@
+"use strict";
+
+// Viewport
+$('head').append(`<meta name="viewport" content="height=device-height,initial-scale=1,maximum-scale=0.6,user-scalable=no"/>`);
+
+// Scrolling
 $('body').addClass('stop-scrolling');
 
 setTimeout(() => {
@@ -21,6 +27,9 @@ navbarObj[0].innerHTML = `
     <div class="divider">/</div>
     <a href="https://github.com/hsmc-coding-club" class="navbar-link" target="_blank" style="padding-right: 20px">GitHub</a>
 `;
+
+// Setup the footer
+$(`#footer`).append(`<p style="padding: 2px; text-align: center; font-size: 18px; margin: 4px;" class="panel-description"> <object class="icon" data="assets/img/social-icons/github.svg" type="image/svg+xml"></object>   <a href="https://github.com/hsmc-coding-club/hsmc-coding-club.github.io" class="post-link" target="_blank" style="font-weight: normal; margin: 1px;">Source Code - Site Programming by Hershraj & Alex</a></p>`)
 
 // Highlight the current page in the navbar
 let ref = window.location.pathname.replace("/", "");
