@@ -5,8 +5,7 @@ let posts = [];
     For Hyperlinks, use this template:
     <a target="_blank" class="post-link" href="[link]">[Text]</a>
     Codeblocks: 
-        -> https://highlightjs.org/usage/
-        -> <pre><code class="language-html">...</code></pre>
+        -> <span class="code-block">[insert code here]</span>
 */
 
 posts.push({
