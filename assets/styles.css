@@ -108,6 +108,7 @@ body {
 .chosen-navbar-link {
     text-decoration: underline var(--light-white);
     text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
 }
 
 .navbar-link:hover {
