@@ -24,18 +24,18 @@
     </head>
     <body>
         <div class="navbar"></div>
-        <br><br><br><br><br><br>
-        <div class="content">
+        <br><br><br><br>
+            <div class="content">
             <div class="panel" style="grid-row-start: 2; grid-column: 2/4;">
                 <img src="assets/img/main-logo-no-bg.png" width="400px" style="padding-right: 10px; display: flex; flex-direction: column; justify-content:center;">
                 <br>
                 <p class="panel-description" style="text-align: center">Welcome to the HS@MC Coding Club.<br> Please join the Discord if you're interested!</p>
             </div>
-            <div class="panel" style="grid-row-start: 3;">
-                <img src="assets/img/poster.png" height="800px">
-            </div>
+            <br>
+            <img src="assets/img/poster.png" class="main-poster" height="800px" style="grid-row-start: 3; border-radius: 20px; border: 3px solid gray;">
             <script>
                 ScrollReveal().reveal('.panel', {delay: 100});
+                ScrollReveal().reveal('.main-poster', {delay: 100});
             </script>
         </div>
         <div id="footer">
