@@ -33,6 +33,18 @@ body {
     margin-bottom: 80px;
 }
 
+/*
+@media screen and (max-width: 888px){
+    #footer {
+        background-color: var(--navbar-blue);
+        position: fixed;
+        bottom: 0px;
+        border-top: 1px solid rgb(62, 68, 82);
+    }
+    
+}
+*/
+
 .content {
     grid-row-start: 2;
     grid-column: 2/4;
