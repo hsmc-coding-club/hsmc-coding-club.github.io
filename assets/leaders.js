@@ -47,7 +47,7 @@ leaders.forEach(leaderData => {
     let socialsOpening = `<div class="socials">`
     for (let prop in leaderData.socials) {
         let capL = prop[0].toUpperCase() + prop.substring(1);
-        socialsOpening += `<object class="icon" data="assets/img/social-icons/${prop}.svg" type="image/svg+xml"></object> <a class="social-item" href="${leaderData.socials[prop]}" target="_blank">${capL}</a><br> `
+        socialsOpening += `<object class="icon" data="assets/img/social-icons/${prop.toLowerCase()}.svg" type="image/svg+xml"></object> <a class="social-item" href="${leaderData.socials[prop]}" target="_blank">${capL}</a><br> `
     }
     socialsOpening += `</div>`;
     leaderObj.append($(socialsOpening));
