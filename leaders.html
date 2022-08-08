@@ -9,6 +9,7 @@
         <!-- Import ScrollReveal -->
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="assets/script.js" defer></script>
+        <script src="assets/leaders.js" defer></script>
 
         <!-- Favicons -->
         <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-touch-icon.png">
@@ -25,56 +26,8 @@
         <div class="navbar"></div>
         <br><br>
         <h2 class="page-heading">🗣️ Club Leaders</h2>
-        <div class="content horizontal" style="grid-row-start: 3;">
-            <div class="panel extra-pad-sides">
-                <p class="name">Alex Sherbrooke</p>
-                <p class="years">2022 / 2023</p>
-                <p class="username">cabalex</p>
-                <img class="person-img" id="alex" src="assets/img/people/alex.png">
-                <div class="socials">
-                   <object class="icon" data="assets/img/social-icons/github.svg" type="image/svg+xml"></object> <a class="social-item" href="https://github.com/cabalex" target="_blank">Github</a><br>
-                   <object class="icon" data="assets/img/social-icons/twitter.svg" type="image/svg+xml"></object> <a class="social-item" href="https://twitter.com/cabalex" target="_blank">Twitter</a><br>
-                   <object class="icon" data="assets/img/social-icons/linkedin.svg" type="image/svg+xml"></object> <a class="social-item" href="https://www.linkedin.com/in/cabalex/" target="_blank">LinkedIn</a>
-                </div>
-            </div>
-            <div class="panel extra-pad-sides">
-                <p class="name">Hershraj Niranjani</p>
-                <p class="years">2022 / 2023</p>
-                <p class="username">sev</p>
-                <img class="person-img" id="hershraj" src="assets/img/people/hershraj.png">
-                <div class="socials">
-                    <object class="icon" data="assets/img/social-icons/github.svg" type="image/svg+xml"></object> <a class="social-item" href="https://github.com/talkierbox" target="_blank">Github</a><br>
-                    <object class="icon" data="assets/img/social-icons/twitter.svg" type="image/svg+xml"></object> <a class="social-item" href="https://twitter.com/hershrajn" target="_blank">Twitter</a><br>
-                    <object class="icon" data="assets/img/social-icons/linkedin.svg" type="image/svg+xml"></object> <a class="social-item" href="https://linkedin.com/in/hershrajn" target="_blank">LinkedIn</a>
-                </div>
-            </div>
-            <script>
-                ScrollReveal().reveal('.panel', {delay: 100});
-
-                $(`#hershraj`).hover(() => {
-                    $(`#hershraj`).fadeToggle(100, () => {
-                        $(`#hershraj`).attr("src", `/assets/img/people/hershraj-pfp.gif`);
-                    });
-                    $(`#hershraj`).fadeToggle(100);
-                }, () => {
-                    $(`#hershraj`).fadeToggle(100, () => {
-                        $(`#hershraj`).attr("src", `/assets/img/people/hershraj.png`);
-                    });
-                    $(`#hershraj`).fadeToggle(100);
-                });
-
-                $(`#alex`).hover(() => {
-                    $(`#alex`).fadeToggle(100, () => {
-                        $(`#alex`).attr("src", `/assets/img/people/alex-pfp.png`);
-                    });
-                    $(`#alex`).fadeToggle(100);                
-                }, () => {
-                    $(`#alex`).fadeToggle(100, () => {
-                        $(`#alex`).attr("src", `/assets/img/people/alex.png`);
-                    });
-                    $(`#alex`).fadeToggle(100);                   
-                });
-            </script>
+        <div id="leaders-container" class="content horizontal" style="grid-row-start: 3;">
+            <!-- Leaders Data is Appended into Here - The data is programatically generated in leaders.js-->
         </div>
         <div id="footer"></div>
     </body>

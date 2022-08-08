@@ -338,6 +338,11 @@ a.post-link:hover {
         align-items: center;
     }
 
+    /* Horizontal becomes vertical lol */
+    .horizontal {
+        flex-direction: column;
+    }
+
     .navbar-link {
         font-size: 20px;
     }
