@@ -29,7 +29,7 @@ navbarObj[0].innerHTML = `
 `;
 
 // Setup the footer
-$(`#footer`).append(`<p style="padding: 2px; text-align: center; font-size: 18px; margin: 4px;" class="panel-description"> <object class="icon" data="assets/img/social-icons/github.svg" type="image/svg+xml"></object>   <a href="https://github.com/hsmc-coding-club/hsmc-coding-club.github.io" class="post-link" target="_blank" style="font-weight: normal; margin: 1px;">Source Code - Site Programming by Hershraj & Alex</a></p>`)
+$(`#footer`).append(`<p style="padding: 2px; text-align: center; font-size: 18px; margin: 4px;" class="panel-description"> <object class="icon" data="assets/img/social-icons/github.svg" type="image/svg+xml"></object>   <a href="https://github.com/hsmc-coding-club/hsmc-coding-club.github.io" class="post-link" target="_blank" style="font-weight: normal; margin: 1px;">Source Code - Site Programming by Hershraj</a></p>`)
 
 // Highlight the current page in the navbar
 let ref = window.location.pathname.replace("/", "");
