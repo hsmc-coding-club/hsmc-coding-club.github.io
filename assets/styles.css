@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;900&display=swap');
 
-:root {    
+:root {
+
+    --light-magenta: rgb(199,146,234);
+    --light-orange: rgb(254, 203, 107);
+    --light-blue: rgb(129, 169, 254);
+
     --light-green: rgb(121, 218, 134);
     --paler-blue: rgb(54, 52, 71);
-    --light-orange: rgb(232, 181, 87);
     --navbar-blue: rgb(40,44,53);
     --light-white: rgb(211, 211, 211);
     --light-gray: rgb(136, 142, 152);
-    --light-blue: rgb(100, 126, 174);
     --opaque-black: rgba(0, 0, 0, 0.25);
-    --light-magenta: rgb(199,146,234);
     --bluish: rgb(0, 85, 255);
     --panel-hover: rgba(0, 0, 0, 0.30);
     --divider-gray: rgb(189,197,211);

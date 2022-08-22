@@ -20,17 +20,143 @@
         <script src="https://unpkg.com/scrollreveal@4"></script>
         <script src="assets/script.js" defer></script>
     </head>
+    <style>
+        /* index specific styles */
+        .feature {
+            width: 100%;
+            height: 20vh;
+            display: flex;
+            overflow: hidden;
+            border-radius: 0.5em;
+            background-size: cover;
+            background-position-y: center;
+            position: relative;
+            margin-bottom: 1em;
+        }
+        .feature > div {
+            width: calc(100% - 20px);
+            height: calc(100% - 20px);
+            padding: 10px;
+            background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0));
+            backdrop-filter: blur(3px);
+        }
+        .feature h1, .joinBtn h1 {
+            /* text side to side gradient */
+            font-family: 'Work Sans', 'Open Sans', Arial, sans-serif;
+            font-weight: 900;
+            font-size: 2.5em;
+            margin: 5px;
+            color: white;
+        }
+        .feature p {
+            font-size: 20px;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        }
+        .feature h1:not(.secondary), .joinBtn:not(.joinBtn:hover) h1 {
+            background: linear-gradient(to right, var(--light-blue), var(--light-magenta) 20%, var(--light-magenta));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .joinBtn:not(.joinBtn:hover) h1 {
+            background: linear-gradient(to right, var(--light-orange), var(--light-magenta));
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        .joinBtn {
+            text-decoration: none;
+            color: white;
+            width: 100%;
+            background: linear-gradient(to right, var(--light-blue), var(--light-magenta));
+            background-repeat: no-repeat;
+            background-position: 80vw;
+            border-radius: 0.5em;
+            cursor: pointer;
+            text-align: center;
+            transition: background 0.1s ease-in-out, transform 0.1s;
+            overflow: hidden;
+        }
+        .joinBtn > div {
+            height: calc(100% - 2em);
+            width: calc(100% - 2em);
+            padding: 1em;
+            background-color: rgba(0,0,0,0.2);
+        }
+        .joinBtn:hover {
+            background-position: 0;
+            transform: scale(1.1);
+        }
+        #feature-code {
+            background-image: url(assets/img/promo-code.png);
+        }
+        #feature-challenges {
+            background-image: url(assets/img/promo-challenges.png);
+        }
+        #feature-projects {
+            background-image: url(assets/img/promo-projects.png);
+        }
+        body {
+            position: relative;
+        }
+        
+        .fancy-wave {
+            position: absolute;
+            z-index: -1;
+            bottom: -80px; /* margins */
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+        .fancy-wave svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: calc(200px + 5vw);
+            transform: rotateY(180deg);
+        }
+        .main-stop {
+            stop-color: var(--light-blue);
+        }
+        .alt-stop {
+            stop-color: var(--light-magenta);
+        }
+    </style>
     <body>
         <div class="navbar"></div>
         <br><br><br><br>
-            <div class="content">
+        <div class="content">
             <div class="panel" style="grid-row-start: 2; grid-column: 2/4;">
                 <img src="assets/img/main-logo-no-bg.png" width="400px" style="padding-right: 10px; display: flex; flex-direction: column; justify-content:center;">
                 <br>
                 <p class="panel-description" style="text-align: center">Welcome to the HS@MC Coding Club.<br> Please join the Discord if you're interested!</p>
             </div>
+            <div class="feature" id="feature-code">
+                <div>
+                    <h1 class="secondary">Learn to code.</h1>
+                    <p><b>No prior coding experience required!</b> Get person-to-person help during club meetings, or ask at any time in the club's #help channel.</p>
+                </div>
+            </div>
+            <div class="feature" id="feature-challenges">
+                <div>
+                    <h1 class="secondary">Participate in challenges.</h1>
+                    <p>Get hands-on with projects that truly test your skill, or enter regional competitions with the club!</p>
+                </div>
+            </div>
+            <div class="feature" id="feature-projects">
+                <div>
+                    <h1>Create awesome projects!</h1>
+                    <p>Create cool things and show them to your friends, your family, and the world!</p>
+                </div>
+            </div>
             <br>
-            <img src="assets/img/poster.png" class="main-poster" style="grid-row-start: 3; border-radius: 20px; border: 3px solid gray; max-height: 800px">
+            <a class="joinBtn" href="https://discord.gg/HuCeNbqMCn" rel="noreferrer" target="_blank">
+                <div>
+                    <h1>Sounds cool?</h1>
+                    <h2>Join our Discord ></h2>
+                </div>
+            </a>
             <br>
             <script>
                 ScrollReveal().reveal('.panel', {delay: 100});
@@ -38,5 +164,16 @@
             </script>
         </div>
         <div id="footer"></div>
+        <div class="fancy-wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="fancy-gradient">
+                        <stop class="main-stop" offset="0%" />
+                        <stop class="alt-stop" offset="100%" />
+                    </linearGradient>
+                </defs>
+                <path fill="url(#fancy-gradient)" d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
     </body>
 </html>
