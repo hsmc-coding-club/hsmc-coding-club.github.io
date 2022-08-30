@@ -34,3 +34,4 @@ $(`#footer`).append(`<p style="padding: 2px; text-align: center; font-size: 18px
 // Highlight the current page in the navbar
 let ref = window.location.pathname.replace("/", "");
 $(`a[href="${ref}"]`).addClass(`chosen-navbar-link`);
+if(ref == "") $(`a[href="index.html"]`).addClass(`chosen-navbar-link`);

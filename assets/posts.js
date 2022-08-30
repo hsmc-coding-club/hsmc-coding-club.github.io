@@ -10,7 +10,7 @@
 let posts = [];
 
 posts.push({
-    "title": "📦 Starter Code & Downloads",
+    "title": "🚀 Starter Code & Downloads",
     "date": "8/22/2022",
     "previewIMG": "assets/img/posts/typescript.png",
     "content": `Listed below are (most) of the files you will need to download for the HSMC Coding Club <br><br>📦<a target="_blank" class="post-link" href="https://nodejs.org/dist/v16.17.0/node-v16.17.0-x64.msi">Node.js Download</a><br>📦<a target="_blank" class="post-link" href="https://github.com/hsmc-coding-club/hsmc-coding-club-starter-typescript/archive/refs/heads/main.zip">Starter Code</a><br>🔗<a target="_blank" class="post-link" href="https://code.visualstudio.com/download">VSCode Download</a>`,
