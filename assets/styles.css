@@ -333,8 +333,21 @@ a.post-link:hover {
 }
 
 
+.img-caption {
+    margin-top: 0px;
+    text-align: center;
+    color: var(--light-gray);
+    font-size: 14px;
 
-@media screen and (max-width: 872px) {
+    margin-bottom: 15px;
+}
+
+.img-caption > a:hover {
+    color: var(--light-magenta);
+}
+
+
+@media screen and (max-width: 968px) {
 
     .navbar {
         text-align: center;

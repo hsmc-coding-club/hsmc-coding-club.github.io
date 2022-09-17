@@ -39,7 +39,7 @@ leaders.forEach(leaderData => {
         <p class="name">${leaderData.full_name}</p>
         <p class="years">${leaderData.years}</p>
         <p class="username">${leaderData.online_name}</p>
-        <img class="person-img" id="${leaderData.id}" src="${leaderData.img_url}">
+       <img class="person-img" id="${leaderData.id}" src="${leaderData.img_url}">
     </div>
     `);
 

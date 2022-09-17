@@ -25,7 +25,9 @@ navbarObj[0].innerHTML = `
     <div class="divider">/</div>
     <a href="https://discord.gg/HuCeNbqMCn" class="navbar-link" target="_blank">Discord</a>
     <div class="divider">/</div>
-    <a href="https://github.com/hsmc-coding-club" class="navbar-link" target="_blank" style="padding-right: 20px">GitHub</a>
+    <a href="https://github.com/hsmc-coding-club" class="navbar-link" target="_blank">GitHub</a>
+    <div class="divider">/</div>
+    <a href="/hsmc-code" class="navbar-link" target="_blank" style="padding-right: 20px">Code!</a>
 `;
 
 // Setup the footer

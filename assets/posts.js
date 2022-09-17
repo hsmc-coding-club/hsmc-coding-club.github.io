@@ -10,15 +10,21 @@
 let posts = [];
 
 posts.push({
+    "title": "🖼️ Week 1 Website Showcase",
+    "date": "9/16/2022",
+    "previewIMG": null,
+    "content": `Thanks to everyone who showed up to week #1 of coding club! Listed below are the websites that y'all made! Good job!`,
+    "author": "Hershraj",
+    "extra-imgs": [{url: "demo-sites/gabe/preview.png", border: false, "caption": `<a href="demo-sites/gabe/index.html" target="_blank">Gabe's Site</a>`}, {url: "demo-sites/ryan/preview.png", border: false, "caption": `<a href="demo-sites/ryan/index.html" target="_blank">Ryan's Site</a>`}]
+});
+
+posts.push({
     "title": "🚀 Starter Code & Downloads",
     "date": "8/22/2022",
     "previewIMG": "assets/img/posts/typescript.png",
     "content": `Listed below are (most) of the files you will need to download for the HSMC Coding Club <br><br>📦<a target="_blank" class="post-link" href="https://nodejs.org/dist/v16.17.0/node-v16.17.0-x64.msi">Node.js Download</a><br>📦<a target="_blank" class="post-link" href="https://github.com/hsmc-coding-club/hsmc-coding-club-starter-typescript/archive/refs/heads/main.zip">Starter Code</a><br>🔗<a target="_blank" class="post-link" href="https://code.visualstudio.com/download">VSCode Download</a>`,
     "author": "Hershraj",
-    "extra-img": {
-        url: null, // bonus image! null or image reference or img URL
-        border: false
-    } 
+    "extra-imgs": []
 });
 
 posts.push({
@@ -27,10 +33,11 @@ posts.push({
     "previewIMG": null, // null or image reference or img URL
     "content": `The site is now live and this is a testing post! Looks like this thing is working! Pretty cool, right? <br><br><i>tbh it wasn't that hard but whatever lol</i> <br><br><span class="code-block">This is a testing code block!</span>`,
     "author": "Hershraj",
-    "extra-img": {
+    "extra-imgs": [{
         url: "assets/img/club-photo-1.png", // bonus image! null or image reference or img URL
-        border: true
-    } 
+        border: true,
+        caption: "Coding Club 2021 - (Left to Right) Audrey, Bren, Gabe, Alex, Hershraj"
+    }] 
 });
 
 
@@ -39,17 +46,26 @@ posts.push({
 function renderPosts(postArr) {
     let toRender = "";
 
-    postArr.forEach(post => {
+    postArr.forEach((post, index) => {
         let prevImgStr = `<img class="large-panel-img" src="${post.previewIMG}">`;
-        let extraImgStr = `<img class="panel-bonus-img" style="max-height: 400px;" src="${post["extra-img"].url}">`;
+        let extraImgStr = ``;
         
-        // Border Settings
-        post["extra-img"].border ? extraImgStr = `<img class="panel-bonus-img" style="max-height: 400px;" src="${post["extra-img"].url}">` : extraImgStr = `<img class="panel-bonus-img" style="max-height: 400px; border: 0px solid black;" src="${post["extra-img"].url}">`;
+        post["extra-imgs"].forEach(extraImg => {
+            // Border Settings
+            let wipStringText = ``;
+            wipStringText += `<img class="panel-bonus-img" style="max-height: 500px; ${extraImg.border ? "border: 2px solid white;" : "border: 0px;"} ${extraImg.caption ? "margin-bottom: 3px;" : ""}" src="${extraImg.url}">`;
+            
+            if(extraImg.caption) {
+                wipStringText = `<div>` + wipStringText + `<div class="img-caption">${extraImg.caption.replace("[ownURL]", extraImg.url)}</div> </div>`
+            }
+            
+            extraImgStr += wipStringText;
+        })
 
         if(!post.previewIMG) prevImgStr = ``;
-        if(!post["extra-img"].url) extraImgStr = ``;
+        if(!post["extra-imgs"] || post["extra-imgs"].length == 0) extraImgStr = ``;
 
-        toRender += `<div class="large-panel">
+        toRender += `<div class="large-panel" id="post-${posts.length - index}">
             <div class="panel-row">
                 ${prevImgStr}
                 <p class="panel-description"><span class="panel-header">${post.title}</span> <br><span class="author">📝 ${post.author}</span><br><span class="date">🕑 ${post.date}</span><br><br>
