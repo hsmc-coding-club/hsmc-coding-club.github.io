@@ -15,7 +15,7 @@ posts.push({
     "previewIMG": null,
     "content": `Thanks to everyone who showed up to week #1 of coding club! Listed below are the websites that y'all made! Good job!`,
     "author": "Hershraj",
-    "extra-imgs": [{url: "demo-sites/gabe/preview.png", border: false, "caption": `<a href="demo-sites/gabe/index.html" target="_blank">Gabe's Site</a>`}, {url: "demo-sites/ryan/preview.png", border: false, "caption": `<a href="demo-sites/ryan/index.html" target="_blank">Ryan's Site</a>`}]
+    "extra-imgs": [{url: "member-showcases/gabe/personal-website/preview.png", border: false, "caption": `<a href="member-showcases/gabe/personal-website/index.html" target="_blank">Gabe's Site</a>`}, {url: "member-showcases/ryan/personal-website/preview.png", border: false, "caption": `<a href="member-showcases/ryan/personal-website/index.html" target="_blank">Ryan's Site</a>`}]
 });
 
 posts.push({
