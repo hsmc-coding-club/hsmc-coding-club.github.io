@@ -37,7 +37,7 @@ posts.push({
         url: "assets/img/club-photo-1.png", // bonus image! null or image reference or img URL
         border: true,
         caption: "Coding Club 2021 - (Left to Right) Audrey, Bren, Gabe, Alex, Hershraj"
-    }] 
+    }]
 });
 
 
@@ -47,13 +47,13 @@ function renderPosts(postArr) {
     let toRender = "";
 
     postArr.forEach((post, index) => {
-        let prevImgStr = `<img class="large-panel-img" src="${post.previewIMG}">`;
+        let prevImgStr;
         let extraImgStr = ``;
         
         post["extra-imgs"].forEach(extraImg => {
             // Border Settings
             let wipStringText = ``;
-            wipStringText += `<img class="panel-bonus-img" style="max-height: 500px; ${extraImg.border ? "border: 2px solid white;" : "border: 0px;"} ${extraImg.caption ? "margin-bottom: 3px;" : ""}" src="${extraImg.url}">`;
+            wipStringText += `<img class="panel-bonus-img" style="max-height: 500px; ${extraImg.border ? "border: 2px solid white;" : "border: 0px;"} ${extraImg.caption ? "margin-bottom: 9px;" : ""}" src="${extraImg.url}">`;
             
             if(extraImg.caption) {
                 wipStringText = `<div>` + wipStringText + `<div class="img-caption">${extraImg.caption.replace("[ownURL]", extraImg.url)}</div> </div>`
@@ -62,7 +62,7 @@ function renderPosts(postArr) {
             extraImgStr += wipStringText;
         })
 
-        if(!post.previewIMG) prevImgStr = ``;
+        post.previewIMG ? prevImgStr = `<img class="large-panel-img" src="${post.previewIMG}">` : prevImgStr = ``;
         if(!post["extra-imgs"] || post["extra-imgs"].length == 0) extraImgStr = ``;
 
         toRender += `<div class="large-panel" id="post-${posts.length - index}">
