@@ -39,7 +39,7 @@ leaders.forEach(leaderData => {
         <p class="name">${leaderData.full_name}</p>
         <p class="years">${leaderData.years}</p>
         <p class="username">${leaderData.online_name}</p>
-       <img class="person-img" id="${leaderData.id}" src="${leaderData.img_url}">
+       <img class="person-img" id="${leaderData.id}" src="${leaderData.img_url}" draggable="false">
     </div>
     `);
 
@@ -55,6 +55,7 @@ leaders.forEach(leaderData => {
     $(`#leaders-container`).append(leaderObj);
 
     // Image Hover Effect
+    /*
     let fadeToggleNum = 300;
     $(`#${leaderData.id}`).hover(() => {
         $(`#${leaderData.id}`).fadeToggle(fadeToggleNum, () => {
@@ -67,6 +68,7 @@ leaders.forEach(leaderData => {
         });
         $(`#${leaderData.id}`).fadeToggle(fadeToggleNum);
     });
+    */
 });
 
 // ScrollReveal
