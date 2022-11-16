@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Personal Website Project</title>
+    </head>
+
+<script>
+
+    let pageCounter1 = ["box12"];
+
+    function nextPage(){
+        document.getElementById("box1").classList.toggle("hidden");
+        document.getElementById("box2").classList.toggle("hidden");
+        document.getElementById("box3").classList.toggle("hidden");
+        document.getElementById("box12").classList.toggle("show");
+        document.getElementById("box22").classList.toggle("show");
+        document.getElementById("box32").classList.toggle("show");
+    }
+</script>
+
+<style>
+    body {
+        background-image: url("https://th-thumbnailer.cdn-si-edu.com/jfgEaLjidW09I4BU4-1jn6vcaD8=/1072x720/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/ee/54/ee546179-a222-470a-8f7e-147ca1adbcc6/42-56923287.jpg");
+        background-size: cover;
+    }
+    .box {
+        background-color: cornsilk;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box > h3 {
+        color:darkred;
+        text-align: center;
+    }
+    .box > p {
+        color:darkgoldenrod;
+    }
+    .box > img {
+        width: 300px;
+        height: 300px;
+        
+    }
+    .hidden {
+        display: none;
+    }
+    .show {
+        display: flex;
+    }
+    #flexbox {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #flexbox > button {
+        display: flex;
+        flex-direction: column;
+    }
+    #buttonCenter {
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+    <h1 style="color: gold; text-align: center;">Mansa Musa Facts!</h1>
+
+    <body>
+        
+        <div id="flexbox">
+            <div class="box" id="box1">
+                <h3>Man of Gold</h3>
+                <p> Mansa Musa made his wealth through the African slave and gold trade!</p>
+                <img src="https://g.foolcdn.com/editorial/images/450048/gold-bars-gettyimages-502725271.jpg"> 
+            </div>
+            <div class="box" id="box2">
+                <h3>Richest Man of all Time</h3>
+                <p> Mansa Musa had an estimated net worth of 400 billion dollars in today's money!</p>
+                <img src="https://cdn.i-scmp.com/sites/default/files/d8/images/canvas/2022/10/11/153f8a10-67f4-4c26-a00a-b40914dcc9ae_a24364f4.jpg">
+            </div>
+            <div class="box" id="box3">
+                <h3>King</h3>
+                <p> Mansa Musa was the king of the Mali Emporer which is was located in west Africa!</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/MALI_empire_map.PNG/250px-MALI_empire_map.PNG">
+            </div>
+            <div class="box hidden" id="box12">
+                <h3>The Wrong Heir?</h3>
+                <p> Mansa Musa did not have a strong claim to the throne as his father and grandfather weren't kings!</p>
+                <img src="https://images.hindi.news18.com/ibnkhabar/uploads/2021/10/worlds-richest-man-ever-lived-mansa-musa-163524387316x9.jpg">
+            </div>
+            <div class="box hidden" id="box22">
+                <h3>Conqueror and Strategist</h3>
+                <p> The Mali Empire nearly tripled in size under Mansa Musa!</p>
+                <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2323893/settings_images/f7m6QH3hS2kOlr05vvjQ_image3.png">
+            </div>
+            <div class="box hidden" id="box32">
+                <h3>Long Reign</h3>
+                <p> Mansa Musa ruled over the Mali Empire for 25 years, only stopping with his death in 1337!</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKnwh9zSH4-fuq3nc8uM2_EdVe4hR0d_Wi7Q&usqp=CAU">
+            </div>
+            
+        </div>
+        <div id="buttonCenter">
+            <button onclick="nextPage()"> Find out more about Mansa Musa!</button>
+        </div>
+    </body>
+</html>
